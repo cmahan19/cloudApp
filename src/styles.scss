@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/css/reset.css";
+@import "./assets/css/fonts.css";
+
+body {
+    font-family: 'Ubuntu', serif;
+    font-size: 16px;
+    font-weight: 400;
+    height: 100%;
+}
