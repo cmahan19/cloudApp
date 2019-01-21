@@ -1,0 +1,25 @@
+nav {
+    height: 73px;
+    background: #bdbbbb;
+    padding: 0 140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    div.logo-container {
+        img.logo {
+            max-height: 45px;
+        }
+    }
+
+    div.menu-container {
+        ul.menu {
+            li.menu-item {
+                color: #041f43;
+                font-weight: 500;
+                display: inline;
+                padding: 0 28px;
+            }
+        }
+    }
+}
