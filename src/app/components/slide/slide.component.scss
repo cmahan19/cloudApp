@@ -1,0 +1,60 @@
+section.banner-image {
+    height: 415px;
+    position: relative;
+
+    div.slide-actions {
+        position: absolute;
+        bottom: 10%;
+        padding: 50px 315px;
+        width: 620px;
+        color: #ffffff;
+        align-items: center;
+        overflow: hidden;
+        user-select: none;
+
+        div{
+            display: none;
+
+            &.active {
+                display: block;
+            }
+        }
+
+        h2.slide-title {
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        p.slide-p {
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        a.slide-cta {
+            background: #6db746;
+            display: inline-block;
+            padding: 1.375rem 2.75rem 1.4375rem;
+            font-weight: 500;
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section.banner-image {
+        section.banner-image {
+            height: 360px;
+        }
+    
+        div.slide-actions {
+            padding: 10px 0;
+            text-align: center;
+            width: 100%;
+
+            h2.slide-title, 
+            p.slide-p {
+                padding: 0 10px;
+            }
+        }
+    }
+}
