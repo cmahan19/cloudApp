@@ -3,7 +3,7 @@ import { SwipeService } from './swipe.service';
 import { isPlatformServer, DOCUMENT } from '@angular/common';
 import { ISlide } from './ISlide';
 import { IImage } from './IImage';
-import { Slide } from '../../models/slide.model';
+import { Slide, Swipe } from '../../models/slide.model';
 import { DomSanitizer, TransferState, makeStateKey } from '@angular/platform-browser';
 
 const FIRST_SLIDE_KEY = makeStateKey<any>('firstSlide');
@@ -29,7 +29,7 @@ export class SlideshowComponent implements OnInit, DoCheck {
   @Input() disableSwiping: boolean = false;
   @Input() autoPlay: boolean = false;
   @Input() autoPlayInterval: number = 5000;
-  @Input() stopAutoPlayOnSlide: boolean = true;
+  @Input() stopAutoPlayOnSlide: boolean = false;
   @Input() autoPlayWaitForLazyLoad: boolean = false;
   @Input() debug: boolean;
   @Input() backgroundSize: string = 'cover';
@@ -42,6 +42,7 @@ export class SlideshowComponent implements OnInit, DoCheck {
   @Input() captionBackground: string = 'rgba(0, 0, 0, .35)';
   @Input() lazyLoad: boolean = false;
   @Input() hideOnNoSlides: boolean = false;
+  @Input() swipe: Swipe;
 
   @Output() onSlideLeft = new EventEmitter<number>();
   @Output() onSlideRight = new EventEmitter<number>();
@@ -89,6 +90,10 @@ export class SlideshowComponent implements OnInit, DoCheck {
     else if (this.hideOnNoSlides === true) {
       this._renderer.setStyle(this.container.nativeElement, 'display', 'none');
       this._isHidden = true;
+    }
+
+    if (this.swipe) {
+      this.onSwipe(this.swipe.e, this.swipe.when);
     }
 
     this.setStyles();

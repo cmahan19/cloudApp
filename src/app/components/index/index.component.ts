@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Slide } from 'src/app/models/slide.model';
+import { Slide, Swipe } from 'src/app/models/slide.model';
 
 @Component({
     selector: 'app-index',
@@ -10,6 +10,7 @@ import { Slide } from 'src/app/models/slide.model';
 export class IndexComponent implements OnInit {
     slideData: Slide;
     currIndex: number = 0;
+    swipe: Swipe;
 
     ngOnInit() {
         this.getSlides();
@@ -19,8 +20,12 @@ export class IndexComponent implements OnInit {
         this.slideData = slideData;
     }
 
-    onSlide(num) {
+    onSlide(num: number) {
         this.currIndex = num;
+    }
+
+    onSwipe(e: TouchEvent, when: string): void {
+        this.swipe = {e, when};
     }
 }
 

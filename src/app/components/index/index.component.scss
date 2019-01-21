@@ -11,6 +11,7 @@ main {
             color: #ffffff;
             align-items: center;
             overflow: hidden;
+            user-select: none;
 
             div{
                 display: none;

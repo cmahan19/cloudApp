@@ -1,3 +1,8 @@
+export interface Swipe {
+    e: TouchEvent;
+    when: string;
+}
+
 export interface Slide {
     slideURLs: string[];
     slideActions: SlideAction[];
