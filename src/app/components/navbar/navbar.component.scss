@@ -1,10 +1,10 @@
 nav {
     height: 73px;
-    background: #bdbbbb;
     padding: 0 140px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .1);
 
     div.logo-container {
         img.logo {
