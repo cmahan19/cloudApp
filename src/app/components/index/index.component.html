@@ -6,11 +6,22 @@
             [autoPlayInterval]="10000"
             [showDots]="true"
             [showArrows]="false"
-            [imageUrls]="slideURLs"
-            [lazyLoad]="slideURLs?.length > 1"
-            [autoPlayWaitForLazyLoad]="true">
+            [imageUrls]="slideData.slideURLs"
+            [lazyLoad]="slideData.slideURLs?.length > 1"
+            [autoPlayWaitForLazyLoad]="true"
+            (onSlideLeft)="onSlide($event)"
+            (onSlideRight)="onSlide($event)"
+            (onSwipeLeft)="onSlide($event)"
+            (onSwipeRight)="onSlide($event)">
         </slideshow>
-        
+        <!-- Slide content -->
+        <div class="slide-actions" *ngIf="slideData?.slideActions">
+            <div *ngFor="let item of slideData.slideActions; let i = index" [ngClass]="{'active': currIndex == i }">
+                <h2 class="slide-title">{{item.title}}</h2>
+                <p class="slide-p">{{item.para}}</p>
+                <a class="slide-cta" href={{item.cta.url}}>{{item.cta.text}}</a>
+            </div>
+        </div>
     </section>
     <!-- END Banner Image Section -->
 </main>
