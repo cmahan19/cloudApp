@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { SlideshowModule } from 'ng-simple-slideshow';
+import { SlideshowModule } from './modules/slideshow/slideshow.module';
 
 import { RootComponent } from './components/root/root.component';
 import { TopmenuComponent } from './components/topmenu/topmenu.component';
