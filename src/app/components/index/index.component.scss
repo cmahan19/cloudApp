@@ -1,17 +1,6 @@
 main {
     section.banner-image {
         height: 415px;
-
-        .slide-show {
-            background-position: center;
-            background-size: cover;
-            opacity: 0;
-            transition: opacity 500ms ease 0s;
-        }
-
-        .slide-active {
-            opacity: 1;
-        }
     }
 
 

@@ -3,13 +3,14 @@
     <section class="banner-image">
         <slideshow
             [autoPlay]="true"
-            [autoPlayInterval]="7000"
+            [autoPlayInterval]="10000"
             [showDots]="true"
-            [showArrows]="true"
+            [showArrows]="false"
             [imageUrls]="slideURLs"
             [lazyLoad]="slideURLs?.length > 1"
             [autoPlayWaitForLazyLoad]="true">
         </slideshow>
+        
     </section>
     <!-- END Banner Image Section -->
 </main>
