@@ -1,11 +1,17 @@
 nav {
     height: 73px;
-    padding: 0 140px;
+    background: #ffffff;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
 
+    div {
+        padding: 0 140px;
+    }
+    
     div.logo-container {
         img.logo {
             max-height: 45px;
