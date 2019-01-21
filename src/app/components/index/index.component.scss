@@ -1,6 +1,34 @@
 main {
     section.banner-image {
         height: 415px;
+        position: relative;
+
+        div.slide-actions {
+            position: absolute;
+            bottom: 10%;
+            padding: 50px 315px;
+            width: 620px;
+            color: #ffffff;
+            align-items: center;
+
+            h2.slide-title {
+                font-weight: bold;
+                margin-bottom: 1rem;
+            }
+
+            p.slide-p {
+                line-height: 1.6;
+                margin-bottom: 1rem;
+            }
+
+            button.slide-cta {
+                background: #6db746;
+                padding: 1.375rem 2.75rem 1.4375rem;
+                font-weight: 500;
+                font-size: 1.2em;
+                transition: background-color .3s ease-out;
+            }
+        }
     }
 
 
