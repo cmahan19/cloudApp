@@ -30,4 +30,41 @@ nav {
             }
         }
     }
+
+    button.site-menu-hamburger {
+        padding: .63rem .35rem;
+        background-color: transparent;
+        color: transparent;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        height: 44px;
+
+        div {
+            padding: 0 15px;
+        }
+
+        div.logo-container {
+            img.logo {
+                max-height: 32px;
+            }
+        }
+
+        div.menu-container {
+            display: none;
+        }
+
+        button.site-menu-hamburger {
+            display: inline-block;
+            content: " ";
+            width: 35px;
+            height: 23px;
+            position: absolute;
+            right: 15px;
+            background-image: url(/assets/img/icon-menu.png);
+        }
+    }
 }

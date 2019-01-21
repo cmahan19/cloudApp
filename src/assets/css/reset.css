@@ -50,6 +50,9 @@ button {
 	border-style: none;
 	color: inherit;
 }
+button:focus {
+	outline: 0;
+}
 a {
 	text-decoration: none;
 	color: inherit;

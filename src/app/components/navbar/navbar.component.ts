@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+    showMenu: boolean = false;
+
+    onClick(event) {
+        this.showMenu = !this.showMenu;
+        console.log(this.showMenu);
+    }
 }
