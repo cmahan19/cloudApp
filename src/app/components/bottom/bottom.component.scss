@@ -1,13 +1,17 @@
 .bottom-section {
-    background: #eee;
+    background: #041f43;
+    color: #eeeeee;
+    height: 26px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 0.68em;
     align-items: center;
     
-
     div.bottom-menu {
         text-align: end;
+        
         ul.menu {
             li.menu-item {
                 padding: 0 10px;
