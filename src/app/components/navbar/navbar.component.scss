@@ -1,41 +1,41 @@
 nav {
-    height: 73px;
-    width: 100%;
-    background: #ffffff;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
+    height: 73px;
+    width: 100vw;
+    background: #ffffff;
+    box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.1);
     z-index: 200;
 
-    div {
-        padding: 0 140px;
-    }
-    
-    div.logo-container {
-        img.logo {
-            max-height: 45px;
-        }
-    }
+    div.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        height: 100%;
 
-    div.menu-container {
-        ul.menu {
-            li.menu-item {
-                color: #041f43;
-                font-weight: 500;
-                display: inline;
-                padding: 0 28px;
+        div.logo-container {
+            img.logo {
+                max-height: 45px;
             }
         }
-    }
-
-    button.site-menu-hamburger {
-        padding: .63rem .35rem;
-        background-color: transparent;
-        color: transparent;
-        display: none;
+    
+        div.menu-div {
+            text-align: end;
+            ul.menu {
+                li.menu-item {
+                    color: #041f43;
+                    font-weight: 500;
+                    padding: 0 28px;
+                }
+                li:nth-last-child(1) {
+                    padding-right: 0;
+                }
+            }
+        }
+    
+        button.site-menu-hamburger {
+            display: none;
+        }
     }
 }
 
@@ -43,28 +43,30 @@ nav {
     nav {
         height: 44px;
 
-        div {
+        div.container {
             padding: 0 15px;
-        }
+            align-items: center;
+            
 
-        div.logo-container {
-            img.logo {
-                max-height: 32px;
+            div.logo-container {
+                img.logo {
+                    max-height: 32px;
+                }
             }
-        }
-
-        div.menu-container {
-            display: none;
-        }
-
-        button.site-menu-hamburger {
-            display: inline-block;
-            content: " ";
-            width: 35px;
-            height: 23px;
-            position: absolute;
-            right: 15px;
-            background-image: url(/assets/img/icon-menu.png);
+    
+            div.menu-div {
+                display: none;
+            }
+    
+            button.site-menu-hamburger {
+                grid-column-start: 3;
+                display: inline-block;
+                width: 35px;
+                height: 23px;
+                background: transparent;
+                color: transparent;
+                background-image: url(/assets/img/icon-menu.png);
+            }
         }
     }
 }
