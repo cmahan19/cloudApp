@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { IndexComponent } from './components/index/index.component';
 import { SlideComponent } from './components/slide/slide.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BottomComponent } from './components/bottom/bottom.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 
@@ -21,6 +22,7 @@ import { ContactComponent } from './components/contact/contact.component';
         IndexComponent,
         SlideComponent,
         FooterComponent,
+        BottomComponent,
         AboutComponent,
         ContactComponent
     ],

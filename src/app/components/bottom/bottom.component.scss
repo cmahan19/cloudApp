@@ -1,0 +1,20 @@
+.bottom-section {
+    background: #eee;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.68em;
+    align-items: center;
+    
+
+    div.bottom-menu {
+        text-align: end;
+        ul.menu {
+            li.menu-item {
+                padding: 0 10px;
+            }
+            li:nth-last-child(1) {
+                padding-right: 0;
+            }
+        }
+    }
+}
