@@ -31,9 +31,9 @@ export class SlideComponent implements OnInit {
 
 const slideData: Slide = {
     slideURLs: [
-        "/assets/img/banner1.jpg",
-        "/assets/img/banner2.jpg",
-        "/assets/img/banner3.jpg"
+        "./assets/img/banner1.jpg",
+        "./assets/img/banner2.jpg",
+        "./assets/img/banner3.jpg"
     ],
     slideActions: [
         { 
