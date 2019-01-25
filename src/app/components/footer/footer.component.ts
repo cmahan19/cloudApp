@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
     selector: 'app-footer',
@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
 })
 export class FooterComponent implements OnInit {
 
-    contactForm = this._fb.group({
+    form = this._fb.group({
         fullName:   ["", [Validators.required, Validators.maxLength(25)]],
         email:      ["", [Validators.required, Validators.email]],
         message:    ["", [Validators.required, Validators.minLength(5)]]
@@ -21,10 +21,12 @@ export class FooterComponent implements OnInit {
     }
 
     onSubmit() {
-        if (this.contactForm.invalid) {
+        if (this.form.invalid) {
             return;
         }
-        console.log("click")
+        console.log(this.form.controls["fullName"].value)
+        console.log(this.form.controls["email"].value)
+        console.log(this.form.controls["message"].value)
     }
 
 }
