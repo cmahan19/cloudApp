@@ -20,7 +20,7 @@
         <div *ngFor="let item of slideData.slideActions; let i = index" [ngClass]="{'active': currIndex == i }">
             <h2 class="slide-title">{{item.title}}</h2>
             <p class="slide-p">{{item.para}}</p>
-            <a class="slide-cta" href={{item.cta.url}}>{{item.cta.text}}</a>
+            <a class="slide-cta btn-success" href={{item.cta.url}}>{{item.cta.text}}</a>
         </div>
     </div>
     <!-- END Slide content -->

@@ -2,14 +2,50 @@
     padding: 0 140px;
 }
 
+.btn-primary {
+    background: #0082ae;
+}
+
+.btn-success {
+    background: #6db746;
+}
+
 ul.menu {
     li {
         display: inline;
     }
 }
 
+.hidden-xs {
+    display: inherit;
+}
+
+.show-xs {
+    display: none;
+}
+
 @media screen and (max-width: 1024px) {
     .container {
         padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 1023px) {
+    .hidden-xs {
+        display: none;
+    }
+
+    .show-xs {
+        display: inherit;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hidden-xs {
+        display: none;
+    }
+
+    .show-xs {
+        display: inherit;
     }
 }
