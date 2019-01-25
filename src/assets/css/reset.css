@@ -49,9 +49,13 @@ table {
 button {
 	border-style: none;
 	color: inherit;
+	display: inline-block;
 }
 button:focus {
 	outline: 0;
+}
+button:disabled {
+	background: #818181;
 }
 a {
 	text-decoration: none;
@@ -65,4 +69,25 @@ h5 { font-size: 0.83rem; }
 h6 { font-size: 0.75rem; }
 strong {
 	font-weight: bold;
+}
+input,
+textarea {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+	font-family: inherit;
+}
+::-webkit-input-placeholder { 	/* Chrome */
+	color: #ffffff;
+}
+:-ms-input-placeholder { 		/* IE 10+ */
+	color: #ffffff;
+}
+::-moz-placeholder { 			/* Firefox 19+ */
+	color: #ffffff;
+	opacity: 1;
+}
+:-moz-placeholder { 			/* Firefox 4 - 18 */
+	color: #ffffff;
+	opacity: 1;
 }
