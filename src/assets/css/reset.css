@@ -80,6 +80,11 @@ textarea {
 	border-style: none;
 	font-family: inherit;
 }
+main.container {
+	padding-bottom: 50px;
+}
+
+/* Placeholder color */
 ::-webkit-input-placeholder { 	/* Chrome */
 	color: #ffffff;
 }

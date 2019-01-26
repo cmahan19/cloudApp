@@ -1,6 +1,4 @@
 main {
-    padding-bottom: 50px;
-
     div.contact-form {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -17,7 +15,7 @@ main {
                 padding: 10px;
             }
         }
-    }
+    }  
 }
 
 @media screen and (max-width: 1024px) {
