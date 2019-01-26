@@ -3,7 +3,7 @@ import { SwipeService } from './swipe.service';
 import { isPlatformServer, DOCUMENT } from '@angular/common';
 import { ISlide } from './ISlide';
 import { IImage } from './IImage';
-import { Slide, Swipe } from '../../models/slide.model';
+import { Slide, Swipe } from './slide.models';
 import { DomSanitizer, TransferState, makeStateKey } from '@angular/platform-browser';
 
 const FIRST_SLIDE_KEY = makeStateKey<any>('firstSlide');

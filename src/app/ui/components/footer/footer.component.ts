@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
-    selector: 'app-footer',
+    selector: 'ui-footer',
     templateUrl: './footer.component.html',
     styleUrls: ['./footer.component.scss']
 })
