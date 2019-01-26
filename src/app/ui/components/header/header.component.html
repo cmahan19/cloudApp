@@ -1,2 +1,13 @@
-<p>Home</p>
-<p *ngFor="let page of currPages">--> {{ page | titlecase }}</p>
+<div class="header container">
+    <div class="papge-title">
+        <h3><strong>{{ header | titlecase }}</strong></h3>
+    </div>
+    <div class="breadcrumbs">
+        <p>
+            <a [routerLink]=" '/' ">home</a>
+        </p>
+        <p *ngFor="let page of currPages; let i = index">
+            / <a [routerLink]="[ '/' + breadcrumbs[i] ]">{{ page | lowercase }}</a>
+        </p>
+    </div>
+</div>
