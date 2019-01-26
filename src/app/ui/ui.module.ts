@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BottomComponent } from './components/bottom/bottom.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { FormComponent } from './components/form/form.component';
+import { HeaderComponent } from './components/header/header.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
 
 const components = [
@@ -23,6 +24,7 @@ const components = [
     BottomComponent,
     LayoutComponent,
     FormComponent,
+    HeaderComponent,
     SlideshowComponent
 ]
 
