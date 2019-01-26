@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserTransferStateModule } from '@angular/platform-browser';
 
-import { SlideshowModule } from '../slideshow/slideshow.module';
 import { ContainerRoutingModule } from './ui-routing.module';
 
 import { JampComponent } from './components/jamp/jamp.component';
@@ -12,6 +12,7 @@ import { SlideComponent } from './components/slide/slide.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BottomComponent } from './components/bottom/bottom.component';
 import { LayoutComponent } from './components/layout/layout.component';
+import { SlideshowComponent } from './components/slideshow/slideshow.component';
 
 const components = [
     JampComponent,
@@ -19,7 +20,8 @@ const components = [
     SlideComponent,
     FooterComponent,
     BottomComponent,
-    LayoutComponent
+    LayoutComponent,
+    SlideshowComponent
 ]
 
 @NgModule({
@@ -30,7 +32,7 @@ const components = [
         FormsModule,
         ReactiveFormsModule,
         ContainerRoutingModule,
-        SlideshowModule,
+        BrowserTransferStateModule
     ]
 })
 export class UiModule { }
