@@ -4,7 +4,7 @@
     </div>
     <div class="breadcrumbs">
         <p>
-            <a [routerLink]=" '/' ">home</a>
+            <a [routerLink]="[ '/' ]">home</a>
         </p>
         <p *ngFor="let page of currPages; let i = index">
             / <a [routerLink]="[ '/' + breadcrumbs[i] ]">{{ page | lowercase }}</a>
