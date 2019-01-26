@@ -12,12 +12,13 @@ const routes: Routes = [
     { path: "", component: IndexComponent },
     { path: "about", component: AboutComponent },
     { path: "about/:id", component: AboutComponent },
+    { path: "about/:id/:id", component: AboutComponent },
     { path: "contact", component: ContactComponent },
     { path: "sitemap", component: SitemapComponent },
     { path: "privacy", component: PrivacyComponent },
     { path: "terms", component: TermsComponent },
     { path: "feedback", component: ContactComponent },
-    // { path: "**", redirectTo: "", pathMatch: "full" }
+    { path: "**", redirectTo: "", pathMatch: "full" }
 ];
 
 @NgModule({
