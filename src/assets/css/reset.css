@@ -91,3 +91,17 @@ textarea {
 	color: #ffffff;
 	opacity: 1;
 }
+form.style-full ::-webkit-input-placeholder { 	/* Chrome */
+	color: rgb(126, 148, 176);
+}
+form.style-full ::-ms-input-placeholder { 		/* IE 10+ */
+	color: rgb(126, 148, 176);
+}
+form.style-full ::-moz-placeholder { 			/* Firefox 19+ */
+	color: rgb(126, 148, 176);
+	opacity: 1;
+}
+form.style-full ::-moz-placeholder { 			/* Firefox 4 - 18 */
+	color: rgb(126, 148, 176);
+	opacity: 1;
+}
