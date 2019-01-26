@@ -14,6 +14,7 @@ import { BottomComponent } from './components/bottom/bottom.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { FormComponent } from './components/form/form.component';
 import { HeaderComponent } from './components/header/header.component';
+import { GreetingComponent } from './components/greeting/greeting.component';
 import { SlideshowComponent } from './components/slideshow/slideshow.component';
 
 const components = [
@@ -25,6 +26,7 @@ const components = [
     LayoutComponent,
     FormComponent,
     HeaderComponent,
+    GreetingComponent,
     SlideshowComponent
 ]
 
