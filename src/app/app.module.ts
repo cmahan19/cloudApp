@@ -5,6 +5,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { SlideshowModule } from './modules/slideshow/slideshow.module';
+import { CommonModule } from './modules/common/common.module';
 
 import { RootComponent } from './components/root/root.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -31,9 +32,9 @@ import { ContactComponent } from './components/contact/contact.component';
         FormsModule,
         ReactiveFormsModule,
         AppRoutingModule,
-        SlideshowModule
+        SlideshowModule,
+        CommonModule
     ],
-    providers: [],
     bootstrap: [RootComponent]
 })
 export class AppModule { }

@@ -1,0 +1,50 @@
+$blink: blink 0.5s infinite;
+$color: #ffffff;
+
+.jamp-bg {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background: rgba(125, 125, 125, 0.70);
+    z-index: 300;
+}
+.jamp {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    display: inline-block;
+
+    .jamp-box {
+        display: inline-block;
+        border: 1px solid $color;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: 0 0 12px 3px rgba(0, 0, 0, 0.1);
+        animation: $blink;
+        margin: 0 3px;
+    }
+    
+    .box1 {
+        animation-delay: 0s;
+    }
+    .box2 {
+        animation-delay: 0.16s;
+    }
+    .box3 {
+        animation-delay: 0.33s;
+    }
+}
+
+@keyframes blink {
+    0% {
+        background: transparent;
+    }
+    50% {
+        background: $color;
+    }
+    100% {
+        background: transparent;
+    }
+}
