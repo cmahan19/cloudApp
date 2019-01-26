@@ -1,0 +1,18 @@
+<form
+    [ngClass]="{'style-full': isFullForm, 'hidden-xs': !isFullForm}"
+    [formGroup]="form"
+    (ngSubmit)="onSubmit()">
+    <div *ngIf="isFullForm; else compactForm">
+        <h3>Leave us a message</h3>
+        <div class="inputs">
+            <input type="text" formControlName="fullName" placeholder="Full Name">
+            <input type="email" formControlName="email" placeholder="Email Address">
+        </div>
+    </div>
+    <ng-template #compactForm>
+        <input type="text" formControlName="fullName" placeholder="Full Name">
+        <input type="email" formControlName="email" placeholder="Email Address">
+    </ng-template>
+    <textarea formControlName="message" rows="7" cols="30" placeholder="Your Message"></textarea>
+    <button class="btn-primary" [disabled]="!form.valid">Submit</button>
+</form>

@@ -2,12 +2,7 @@
     <div class="footer-menu">
         <strong>Contact</strong>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque adipisci veritatis vitae vero, doloribus corporis?</p>
-        <form [formGroup]="form" (ngSubmit)="onSubmit()" class="hidden-xs">
-            <input type="text" formControlName="fullName" placeholder="Full Name">
-            <input type="email" formControlName="email" placeholder="Email Address">
-            <textarea formControlName="message" rows="7" cols="30" placeholder="Your Message"></textarea>
-            <button class="btn-primary" [disabled]="!form.valid">Submit</button>
-        </form>
+        <ui-form [full]="false"></ui-form>
         <a [routerLink]="'/contact'" class="show-xs">Contact Us</a>
     </div>
     <div class="footer-menu">
