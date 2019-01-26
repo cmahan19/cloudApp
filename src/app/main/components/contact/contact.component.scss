@@ -1,3 +1,17 @@
-div {
-    margin-left: 50px;
+main {
+    div.contact-form {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        div.contact-form {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 0;
+        }
+    }
 }
