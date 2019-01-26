@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Slide, Swipe } from '../../models/slide.models';
+import { Slide, Swipe } from '../../models/main.models';
 
 @Component({
     selector: 'ui-slide',

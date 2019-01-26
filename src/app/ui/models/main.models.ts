@@ -33,3 +33,8 @@ interface SlideAction {
     para: string;
     cta: {text: string, url: string};
 }
+
+export interface MenuLinks {
+    url: string;
+    title: string;
+}

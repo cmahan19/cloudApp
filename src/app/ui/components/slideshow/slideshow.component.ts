@@ -1,7 +1,7 @@
 import { Component, ElementRef, EventEmitter, Inject, Input, Output, PLATFORM_ID, Renderer2, ViewChild, DoCheck, NgZone, OnInit } from '@angular/core';
 import { DomSanitizer, TransferState, makeStateKey } from '@angular/platform-browser';
 import { isPlatformServer, DOCUMENT } from '@angular/common';
-import { Slide, Swipe, IImage, ISlide } from '../../models/slide.models';
+import { Slide, Swipe, IImage, ISlide } from '../../models/main.models';
 
 const FIRST_SLIDE_KEY = makeStateKey<any>('firstSlide');
 
