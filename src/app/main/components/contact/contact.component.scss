@@ -1,8 +1,27 @@
 main {
+    div.contact-form-title {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+        padding: 80px 0 50px 0;
+    }
+    
     div.contact-form {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-gap: 20px;
+
+        div.contact-cards {
+            display: grid;
+            grid-template-rows: auto;
+            grid-row-gap: 10px;
+
+            > div {
+                border: 1px solid rgb(239, 239, 239); 
+                box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.1);
+                padding: 10px;
+            }
+        }
     }
 }
 
