@@ -2,11 +2,15 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 10px;
-    background: #041f43;
     color: #dddddd;
     padding-top: 5em;
     padding-bottom: 2em;
     border-bottom: 1px solid #072d5f71;
+    background-color: #041f43;
+    background-image: url(/assets/img/map.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 
     div.footer-menu {
         padding-top: 30px;
