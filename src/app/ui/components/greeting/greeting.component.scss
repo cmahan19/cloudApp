@@ -17,3 +17,9 @@ div.greeting-card {
         color: #999;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    div.greeting-card {   
+        width: 90%;
+    }
+}
