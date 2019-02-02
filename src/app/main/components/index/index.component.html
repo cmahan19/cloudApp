@@ -2,5 +2,8 @@
     <ui-slide></ui-slide>
     <main class="container">
         <ui-greeting [title]="greetingsTitle" [text]="greetingsText"></ui-greeting>
+        <section class="section-feature-cards">
+            <ui-feature-card *ngFor="let card of featureCards" [card]="card"></ui-feature-card>
+        </section>
     </main>
 </ui-layout>
