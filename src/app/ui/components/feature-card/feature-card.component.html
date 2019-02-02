@@ -1,0 +1,6 @@
+<div *ngIf="card">
+    <span><i [ngClass]="'fa fa-' + card.icon + ' fa-4x'"></i></span>
+    <h3><strong>{{ card.title }}</strong></h3>
+    <p>{{ card.text }}</p>
+    <a [routerLink]="card.url">Read More</a>
+</div>
