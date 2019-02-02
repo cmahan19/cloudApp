@@ -10,10 +10,12 @@ export class NavbarComponent implements OnInit {
 
     showMenu: boolean = false;
     links: MenuLinks[];
+    logoSrc: string;
 
     constructor() { }
 
     ngOnInit() {
+        this.logoSrc = "./assets/img/logo.png";
         this.links = [
             {
                 url: "/",
