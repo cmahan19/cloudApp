@@ -26,7 +26,10 @@ div {
 }
 
 @media screen and (max-width: 1024px) {
-    div {
+    div {        
+        img {
+            width: 100px;
+        }
 
         p {
             height: 190px;
