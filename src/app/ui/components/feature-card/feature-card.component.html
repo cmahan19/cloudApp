@@ -1,6 +1,6 @@
 <div *ngIf="card">
-    <span><i [ngClass]="'fa fa-' + card.icon + ' fa-4x'"></i></span>
+    <span><img src="/assets/svg/{{ card.icon }}.svg" alt="{{ card.icon }}"></span>
     <h3><strong>{{ card.title }}</strong></h3>
     <p>{{ card.text }}</p>
-    <a [routerLink]="card.url">Read More</a>
+    <a [routerLink]="card.url"><strong>Read More</strong></a>
 </div>
